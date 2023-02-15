@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+
+
+/* hero background image */
+.bgimage {
+  height: 100vh;
+  /* background: linear-gradient(135deg, lightyellow 30%, lightblue ); */
+  background: url('vector-abstract-floral-element.jpg');
+  background-size: cover;
+  position: relative;
+
+}
+
+.hero-text {
+  background-color: rgb(214, 211, 211);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.3);
+  /* Black w/opacity/see-through */
+  font-weight: bolder;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 5%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 100%;
+  padding: 1%;
+  text-align: center;
+
+}
+
+/* about section image css */
+.imageAboutPage {
+  width: 100%;
+}
+
+.card-title {
+  text-align: center;
+}
+
+.card-body:hover {
+  transform: scale(1.05);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, .12), 10px 4px 8px rgba(0, 0, 0, .06);
+
+}
+
+.service-img {
+  width: 95%;
+  height: 60%;
+}
+
+#gal:hover {
+  transform: scale(1.05);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, .12), 10px 4px 8px rgba(0, 0, 0, .06);
+}
+
+/* display background color black on navbar scroll */
+.navbarScroll.navbarDark {
+  background-color: black;
+  color: white;
+}
+
+
+/* social media icons styling */
+.social-icons {
+  font-size: 36px;
+  cursor: pointer;
+}
+
+.fa-facebook:hover, .fa-instagram:hover, .fa-twitter:hover, .fa-linkedin:hover {
+  color: #008000;
+}
+
+.fab {
+  color: #000000;
+}
+
+/* footer styling */
+#footer {
+  background-color: #808080;
+  text-align: center;
+}
+
+/* spacing on all sections */
+#about, #services, #gallery, #videos, #contact {
+
+  padding-top: 4rem;
+}
+
+#contact {
+  padding-bottom: 4rem;
+}
+
+/* form buttom */
+/* Button used to open the contact form - fixed at the bottom of the page */
+#open-button {
+  background-color: #555;
+  color: white;
+   border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  display: flex;
+  margin-left: 45%;
+  margin-top: 40%;
+  
+
+  
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+ box-sizing: border-box;
+ justify-content: center;
+ text-align: center;
+
+}
+
+/* Add styles to the form container */
+.form-popup {
+  max-width: 20%;
+  max-height: 30%;
+  background-color: white;
+  margin-left: 45%;
+  margin-top: 1%;
+  
+ 
+}
+
+/* Full-width input fields */
+.form-popup input[type=text] {
+  width: 40%;
+  padding: 1%;
+ border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-popup input[type=text]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+
+
+/* Add some hover effects to buttons */
+.form-popup .btn:hover, .open-button:hover  .btn-cancel:hover{
+  opacity: 1;
+}
